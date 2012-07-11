@@ -125,9 +125,9 @@ JHtml::core();
 	<dd class="hits">
 	<?php echo JText::sprintf('COM_CONTENT_ARTICLE_HITS', $this->item->hits); ?>
 	</dd>
+<?php endif; ?>
 	</dl>
 </aside>    
-<?php endif; ?>
 <section class="article-intro">
 <?php  if (isset($images->image_intro) and !empty($images->image_intro)) : ?>
 	<?php $imgfloat = (empty($images->float_intro)) ? $params->get('float_intro') : $images->float_intro; ?>
